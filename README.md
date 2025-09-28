@@ -16,75 +16,52 @@ Expected Outcome
 - `products` –   including product name  and region.
 - `transactions` – includes transactions.
 
-  ![CREATING TABLES](https://private-user-images.githubusercontent.com/124999593/494910499-829d270e-1761-4043-b0ed-c7e8301ad66b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNDk5LTgyOWQyNzBlLTE3NjEtNDA0My1iMGVkLWM3ZTgzMDFhZDY2Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NjFjNGE1NDJkNjViYjc4ZTJmNDJjMWRiYjU3ODNhODk0YTVkZDFiYmRlOTI0YjM1NDU0YTA5NzRlYWViNzhjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.qbScxLq1lAWPgisFiXvMxA9R2216RwRbfr3KdnU3-Bo)
+  ![CREATING TABLES](https://private-user-images.githubusercontent.com/124999593/494910665-dd64b7bc-b141-40bf-a972-8c489a0c0b07.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNjY1LWRkNjRiN2JjLWIxNDEtNDBiZi1hOTcyLThjNDg5YTBjMGIwNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lN2I4NjhkZjJhODAyN2Q4MjhmZWFlNzg1MDg3NGIyODQ2Y2JkOTg3YzA2N2UzZmFjMGVhM2QxY2IwNDg5MmY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SHA9Wa3PQ-cPVE73iWhoaMFDLTAw1gObRuWs9POJqMM)
+## Window Function Implementations
+  
+ ##Ranking Functions – Top  Customers by Revenue
+ ![rank](https://private-user-images.githubusercontent.com/124999593/494910801-de717769-5503-4ae5-8a7b-082229cc5468.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwODAxLWRlNzE3NzY5LTU1MDMtNGFlNS04YTdiLTA4MjIyOWNjNTQ2OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMjliZGNkNGFiNDBhNGVlNjZmNmEyODE1ZTA2YWM2OTdjMTU5ODU2M2Y4NWQyYjBhMGIxOWFiNDk5MTJkZmJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EDtNqv7HBk6-OGq7yrfYggPKL1dTpKClbX4ta046BXk)
+ ![rank](https://private-user-images.githubusercontent.com/124999593/494910736-8bfaa10b-7839-4914-9cd9-d28963082590.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNzM2LThiZmFhMTBiLTc4MzktNDkxNC05Y2Q5LWQyODk2MzA4MjU5MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NmRjOGUxOTYzNWZmNzliNTM0MWQ3MmVhYTVmZDQ5NmQ2ODMwMDNhZDA0Yzg4YzNkOTBmNzM1NmRlNzQ3OTMyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NLit7bxBmgPO7-ueBwyBgPqW8vsmlcJ--GHWW3Mu1KA)
+ 
+ 
+  Interpretation: Ranking functions help identify top customers, while handling ties differently.
+  ________________________________________
+  
+ ## Aggregate Functions – Running Totals & Trends
+ ![aggregate](https://private-user-images.githubusercontent.com/124999593/494910499-829d270e-1761-4043-b0ed-c7e8301ad66b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNDk5LTgyOWQyNzBlLTE3NjEtNDA0My1iMGVkLWM3ZTgzMDFhZDY2Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NjFjNGE1NDJkNjViYjc4ZTJmNDJjMWRiYjU3ODNhODk0YTVkZDFiYmRlOTI0YjM1NDU0YTA5NzRlYWViNzhjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.qbScxLq1lAWPgisFiXvMxA9R2216RwRbfr3KdnU3-Bo)
+ ![average](https://private-user-images.githubusercontent.com/124999593/494910539-f4ad0aef-6446-4c1e-bb47-9fba7336f69b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNTM5LWY0YWQwYWVmLTY0NDYtNGMxZS1iYjQ3LTlmYmE3MzM2ZjY5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOTc4ZmY3NDNjMGZhNzUzNzQyZDNjYTljYmY1OWM0NWEzMDVkMTU0ZmJiNjVmZTQ4NmU3ZTU1NmUwMDY5M2U4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pWDHefDMj3nQp2NfYRyIzL-zTU14kPIEd2phmFQWPNM)
+  
+Interpretation: Aggregates show cumulative totals and trends over time.
+________________________________________
+## Navigation Functions – Period-to-Period Analysis
+![navigation](https://private-user-images.githubusercontent.com/124999593/494910694-8724a5fc-3604-4744-a726-82ddda132555.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNjk0LTg3MjRhNWZjLTM2MDQtNDc0NC1hNzI2LTgyZGRkYTEzMjU1NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zOWI4N2E1OGU1ZDk3YzgxNDZiZDkwOGUzYmRlMTAwNDllMzNkYjk5M2E2OTFiZGIyMmRlNDAzYTIwMjcyMDlmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7-QZh5NzwCNZyTLGu4d50ziSWDdGIwfRswULvZXTfyI)
+ 
+Interpretation: Navigation functions show changes between periods to measure performance.
+________________________________________
+## Distribution Functions – Customer Segmentation
+![distribution](https://private-user-images.githubusercontent.com/124999593/494910785-c472c0d9-b098-48ca-b389-eb76d8afe4cd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNzg1LWM0NzJjMGQ5LWIwOTgtNDhjYS1iMzg5LWViNzZkOGFmZTRjZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZGQ4YmRkOWI4OTA0NjY3NmU4OTczMWExZDczNGNlZTAwMzkyMzFhZjc2NWRjMjIyNjE0YjE3M2UzNWE5YjFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.igC7HhtojdkotGFtnmshbNjlPJ7QXKID7Yb68FW0XjA)
+ 
+Interpretation: Distribution functions divide customers into segments, useful for marketing and loyalty programs.
+________________________________________
+5. Results Analysis
+•	Descriptive – What happened?
+Kigali recorded the highest sales, with Coffee Beans and Tea dominating.
+•	Diagnostic – Why did it happen?
+Kigali benefited from higher urban demand and frequent promotions, while Musanze lagged due to limited product range.
+•	Prescriptive – What next?
+Expand successful products in Kigali, and introduce discounts or promotions in Huye and Musanze to boost performance.
+________________________________________
+6. References
+1.	Oracle Docs – Analytic Functions
+2.	MySQL Docs – Window Functions
+3.	GeeksforGeeks – SQL Window Functions
+4.	TutorialsPoint – SQL Analytics Functions
+5.	W3Schools – SQL OVER Clause
+6.	DataCamp – Intro to SQL Window Functions
+7.	Mode Analytics – SQL Window Functions Guide
+8.	Oracle Academy Learning Resources
 
 
-## 🧠 Completed Tasks
-
-### ✅ Compare Values with Previous or Next Records
-- Used `LAG()` and `LEAD()` on salary to determine if an employee's salary is **HIGHER, LOWER, or EQUAL** to the previous employee.
-
-  ![Compare Values with Previous or Next Records (Salary)](https://github.com/user-attachments/assets/6f0f6b0e-41f2-44ae-9973-4221a4c0a085)
-
-
-### ✅ Ranking Data within a Category
-- Applied `RANK()` and `DENSE_RANK()` on salary partitioned by department.
-- Explained the difference using examples.
-
-  ![Ranking Data within a Category (Salary by Department)](https://github.com/user-attachments/assets/936de423-8729-4bf7-8bb4-b2088ca91283)
-
-
-### ✅ Identifying Top Records
-- Fetched **top 3 highest salaries per department** using `RANK()`.
-
-  ![Identifying Top 3 Records per Department (Highest Salaries)](https://github.com/user-attachments/assets/49140648-7b26-4956-b6d3-33ddfa84c25c)
-
-
-### ✅ Finding the Earliest Records
-- Used `ROW_NUMBER()` to retrieve the **first 2 employees** to join each department.
-
-  ![Finding the Earliest Records (First 2 to Join per Department)](https://github.com/user-attachments/assets/5e5dddee-f7d7-46d0-b492-93e60d2d6391)
-
-
-### ✅ Aggregation with Window Functions
-- Calculated **maximum salary** per department and overall.
-- Used `PARTITION BY` to distinguish between category-level and overall calculations.
-
-  ![Aggregation with Window Functions (Max Salaries)](https://github.com/user-attachments/assets/2a713f21-f148-4dce-be9e-ad090618641c)
-
-
-## 🔧 Technology
--  MYSQL Developer
-- GitHub for version control
-
-## 📷 Optional
-- Screenshots
-
----
-
-## 📁 Files Included
-
-- `dataset.sql` – Creates and populates all 3 tables.
-- `queries.sql` – All required queries with window functions.
-- `README.md` – Project summary, explanation, and documentation.
-
----
-
-### 🧠 Real-World Applications
-- HR analytics
-- Yearly employee review tracking
-- Department performance monitoring
-
-
-## 🙌 Conclusion
-
-This project provided a hands-on opportunity to explore the power of **SQL Window Functions** in Oracle. By analyzing employee data across departments and performance records, I was able to:
-
-- 🔍 Perform advanced comparisons using `LAG()` and `LEAD()`
-- 🧮 Rank and filter data meaningfully with `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER()`
-- 📊 Identify trends and key insights through aggregation and partitioning
-- 
-> 💡 These skills not only fulfill academic requirements, but also prepare me for real-world problem solving in data-driven industries.
 
 
 
