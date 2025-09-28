@@ -1,12 +1,20 @@
 ## 📂 Project Name:KwizeraCo ltd
 
 ## 🎯 Objective
-This project demonstrates the use of SQL **Window Functions** in Oracle using a realistic dataset of employees, departments, and performance ratings.
+KwizeraCo Ltd., a retail company in Rwanda, sells food and beverages across regions of Rwanda.
+The company generates thousands of sales transactions monthly, but management struggles to identify top customers by revenue, track sales growth trends, and segment customers effectively. Without insights, marketing campaigns and inventory planning remain inefficient.
+Expected Outcome
+  •	Identify top-performing customers and products.
+  • Track running totals and trends.
+  •	Analyze month-over-month growth.
+  •	Segment customers into quartiles.
+  •	Provide actionable insights for business strategy.
+
 
 ## 🧱 Schema Design
-- `employees` – Details of each employee including department and salary.
-- `departments` – Lookup table for department names.
-- `performance` – Year-wise performance reviews.
+- `customers` – Details of each customer including customer name  and region.
+- `products` –   including product name  and region.
+- `transactions` – includes transactions.
 
   ![CREATING TABLES](https://github.com/user-attachments/assets/4d12fb3e-69a5-4338-8f5f-45205a4a4ca3)
 
