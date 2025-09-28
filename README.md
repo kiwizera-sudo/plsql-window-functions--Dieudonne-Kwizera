@@ -16,7 +16,7 @@ Expected Outcome
 - `products` –   including product name  and region.
 - `transactions` – includes transactions.
 
-  ![CREATING TABLES](https://github.com/user-attachments/assets/4d12fb3e-69a5-4338-8f5f-45205a4a4ca3)
+  ![CREATING TABLES](https://private-user-images.githubusercontent.com/124999593/494910499-829d270e-1761-4043-b0ed-c7e8301ad66b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTkwOTE1NzMsIm5iZiI6MTc1OTA5MTI3MywicGF0aCI6Ii8xMjQ5OTk1OTMvNDk0OTEwNDk5LTgyOWQyNzBlLTE3NjEtNDA0My1iMGVkLWM3ZTgzMDFhZDY2Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyOFQyMDI3NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NjFjNGE1NDJkNjViYjc4ZTJmNDJjMWRiYjU3ODNhODk0YTVkZDFiYmRlOTI0YjM1NDU0YTA5NzRlYWViNzhjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.qbScxLq1lAWPgisFiXvMxA9R2216RwRbfr3KdnU3-Bo)
 
 
 ## 🧠 Completed Tasks
