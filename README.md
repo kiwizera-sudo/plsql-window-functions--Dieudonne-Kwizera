@@ -1,4 +1,4 @@
-## 📂 Project Name: Thejoinventure
+## 📂 Project Name:KwizeraCo ltd
 
 ## 🎯 Objective
 This project demonstrates the use of SQL **Window Functions** in Oracle using a realistic dataset of employees, departments, and performance ratings.
@@ -46,7 +46,7 @@ This project demonstrates the use of SQL **Window Functions** in Oracle using a 
 
 
 ## 🔧 Technology
-- Oracle SQL Developer
+-  MYSQL Developer
 - GitHub for version control
 
 ## 📷 Optional
